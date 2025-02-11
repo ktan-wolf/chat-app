@@ -56,14 +56,14 @@ export default function MyComponent({
 	}
 
 	useEffect(() => {
-		const ws = new WebSocket("wss://backend-ws.100xdevs.com", "echo-protocol");
+		const ws = new WebSocket("wss://ketanpawdiya.com", "echo-protocol");
 		setSocket(ws);
 
         ws.onopen = function() {
             ws.send(JSON.stringify({
                 type: "JOIN_ROOM",
                 payload: {
-                    name: "harkirat",
+                    name: "ketan",
                     userId,
                     roomId: "2",
                 }
